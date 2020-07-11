@@ -40,7 +40,7 @@ describe("serializer", () => {
         it("6th 64 bit is globalPosition.y", ()  => {
             expect(view[5]).toEqual(payload.globalPosition.y);
         });
-        it("7th 64 bit is globalPosition.`", ()  => {
+        it("7th 64 bit is globalPosition.z", ()  => {
             expect(view[6]).toEqual(payload.globalPosition.z);
         });
     });

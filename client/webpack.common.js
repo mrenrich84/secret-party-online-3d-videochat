@@ -10,7 +10,7 @@ module.exports = {
     entry: path.resolve(appDirectory, "src"),
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, 'public/dist')
+        path: path.resolve(__dirname, '../public/dist')
     },
     resolve: {
         extensions: ['.ts', '.js']

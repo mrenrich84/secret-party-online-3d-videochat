@@ -1,5 +1,5 @@
 {
-    "name": "secret-party-online-3d-videochat",
+    "name": "secret-party-online-3d-videochat-webclient",
     "version": "0.0.1",
     "description": "People can socialise in video chat like in real life situations where conversations spark in different places",
     "main": "index.ts",
@@ -45,12 +45,12 @@
         "webpack-merge": "^4.2.2"
     },
     "scripts": {
-        "client:build": "npm --prefix client run build",
-        "server:build": "npm --prefix server run build",
-        "server:start": "npm --prefix server start",
-        "build": "npm run client:build && npm run server:build",
-        "start": "npm run server:start",
-        "dev": "npm --prefix client run dev"
+        "bundle": "npx webpack --config webpack.prod.js",
+        "test": "jest",
+        "build": "npm install && npm run test && npm run bundle",
+        "lint": "npx eslint . --ext .ts,.tsx",
+        "dev:start": "npx webpack-dev-server --config webpack.dev.js",
+        "dev": "npm install && npm run lint && npm run dev:start"
     },
     "repository": {
         "type": "git",

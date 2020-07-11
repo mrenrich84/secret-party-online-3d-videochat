@@ -1,5 +1,5 @@
 import {ThreeD} from "./3d";
-import {Network} from "./network";
+import {Network} from "./network/index";
 import {getLocalStream, showLocalVideoStream} from "./local-stream";
 
 function init(): void {

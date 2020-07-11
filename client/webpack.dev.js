@@ -10,7 +10,7 @@ module.exports = merge(common, {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.resolve(appDirectory, "public"),
+        contentBase: path.resolve(appDirectory, "../public"),
         compress: true,
         hot: true,
         publicPath: '/dist',
